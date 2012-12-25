@@ -14,9 +14,11 @@
 
 runall () 
 { 
+    DEST=results.txt
+    > $DEST 
     for file in natas?.py natas??.py;
     do
-        python $file 2>/dev/null | tee -a results.txt;
+        python $file 2>/dev/null | tee -a $DEST;
     done
 }
 
