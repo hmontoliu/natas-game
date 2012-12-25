@@ -32,7 +32,5 @@ natas.select_form(nr=0) # primera form (y unica)
 natas.form['secret'] = secret
 
 html = natas.submit()
-
-regex = re.compile('.*natas7 is (.*)\W.*')
-password_nl = regex.findall(html.read())[0]
+password_nl = natas.get_password(html.read(), '.*natas7 is (.*)\W.*')
 natas.print_password(password_nl)

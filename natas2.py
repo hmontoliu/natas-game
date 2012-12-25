@@ -7,7 +7,6 @@ natas2.py
 
 la clave esta en files/users.txt
 """
-import re
 import libnatas
 
 # url: "http://natas2.natas.labs.overthewire.org"
@@ -17,7 +16,5 @@ password = "aRJMGKT6H7AOfGwllwocI2QwVyvo7dcl"
 # la password esta en files/users.txt
 natas = libnatas.NatasBrowser(level=2, password=password)
 soup = natas.get_html_soup(natas.level_url + '/files/users.txt')
-regex = re.compile('.*natas3:(.*)\W.*')
-
-password_nl = regex.findall(soup.prettify())[0]
+password_nl = natas.get_password(soup.prettify(), '.*natas3:(.*)\W.*')
 natas.print_password(password_nl)

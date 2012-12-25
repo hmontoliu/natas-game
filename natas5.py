@@ -27,9 +27,5 @@ loggedin_cookie.value = "1"
 
 # reabrimos la pagina con la cookie ya cambiada
 soup = natas.get_html_soup(natas.level_url)
-
-texto = soup.getText()
-regex = re.compile('.*natas6 is (.*)\W.*')
-password_nl = regex.findall(soup.prettify())[0]
-
+password_nl = natas.get_password(soup.prettify(), '.*natas6 is (.*)\W.*')
 natas.print_password(password_nl)

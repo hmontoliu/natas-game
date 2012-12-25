@@ -10,6 +10,7 @@ clases y funciones comunes a todos los niveles
 # http://wwwsearch.sourceforge.net/mechanize/
 
 import mechanize
+import re
 from BeautifulSoup import BeautifulSoup
 
 class NatasBrowser(mechanize.Browser):
@@ -48,6 +49,12 @@ class NatasBrowser(mechanize.Browser):
     def get_html_soup(self, url):
         """Devuelve objeto BeautifulSoup con el contenido del la pagina"""
         return BeautifulSoup(self.get_html_response(url))
+
+    def get_password(self, texto, regex):
+        """Devuelve la passowrd extraida del *texto* mediante la *regexp* pasada"""
+        theregex = re.compile(regex)
+        password = theregex.findall(texto)[0]
+        return password
 
     def print_password(self, password_str):
         """Muestra cadena con la password obtenida"""

@@ -20,8 +20,5 @@ natas.addheaders = [
     ('Referer', referer)]
 
 soup = natas.get_html_soup(natas.level_url)
-texto = soup.getText()
-regex = re.compile('.*natas5 is (.*)\W.*')
-password_nl = regex.findall(soup.prettify())[0]
-
+password_nl = natas.get_password(soup.prettify(), '.*natas5 is (.*)\W.*') 
 natas.print_password(password_nl)
