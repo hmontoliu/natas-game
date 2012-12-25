@@ -6,7 +6,6 @@ natas3.py
 
 El fichero robots.txt indica el directorio dónde está el fichero users.txt
 """
-import re
 import libnatas
 
 # url: "http://natas3.natas.labs.overthewire.org"
@@ -20,7 +19,5 @@ password = "lOHYKVT34rB4agsz1yPJ2QvENy7YnxUb"
 natas = libnatas.NatasBrowser(level=3, password=password)
 soup = natas.get_html_soup(natas.level_url + '/s3cr3t/users.txt')
 
-regex = re.compile('.*natas4:(.*)\W.*')
-password_nl = regex.findall(soup.prettify())[0]
-
+password_nl = natas.get_password(soup.prettify(), '.*natas4:(.*)\W.*')
 natas.print_password(password_nl)
