@@ -3,11 +3,10 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas4.py
+natas04.py
 
 hay que usar como referer la url del siguiente nivel 
 """
-import re
 import libnatas
 
 # url: "http://natas4.natas.labs.overthewire.org"

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas6.py
+natas06.py
 
 el presunto codigo fuente de la pagina muestra que el formulario de validacion necesita el valor 
 que aparece en includes/secret.inc

@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas3.py
+natas03.py
 
 El fichero robots.txt indica el directorio dónde está el fichero users.txt
 """

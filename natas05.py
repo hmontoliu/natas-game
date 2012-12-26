@@ -2,12 +2,11 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas5.py
+natas05.py
 
 la cookie loggedin tiene valor 0 (false) por lo que hay que cambiarla para
 poder acceder
 """
-import re
 import libnatas
 
 # url: "http://natas5.natas.labs.overthewire.org"

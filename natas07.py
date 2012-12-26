@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas7.py
+natas07.py
 
 pagina php, el codigo fuente muestra que la pass esta en
 /etc/natas_webpass/natas8
@@ -10,7 +10,6 @@ pagina php, el codigo fuente muestra que la pass esta en
 se puede obtener el codigo en 
 index.php?page=/etc/natas_webpass/natas8
 """
-import re
 import libnatas
 
 # url: "http://natas7.natas.labs.overthewire.org"

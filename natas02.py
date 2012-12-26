@@ -3,7 +3,7 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas2.py
+natas02.py
 
 la clave esta en files/users.txt
 """

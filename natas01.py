@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # vim:ts=4:sw=4:et:ft=python:
 """
-natas1.py
+natas01.py
 
 prácticamente lo mismo que el nivel0
 """
