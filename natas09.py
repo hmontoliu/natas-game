@@ -6,6 +6,8 @@ natas09.py
 
 Se puede inyectar codigo de shell directamente en el formulario;
 basta con encontrar el fichero de contraseña para el usuario natas10 
+
+esta en /etc/natas_webpass/natas10
 """
 import libnatas
 
