@@ -8,7 +8,7 @@ Igual que el natas09
 
 Se puede inyectar codigo de shell directamente en el formulario;
 basta con mostrar el fichero de contraseña para el usuario natas11 
-que esta en /etc/natas_webpass/natas10
+que esta en /etc/natas_webpass/natas11
 
 como no se admiten caracteres tipo ";" hay que modificar la consulta grep para
 mostrar lo que queremos ver.
