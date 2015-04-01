@@ -7,11 +7,12 @@ natas05.py
 la cookie loggedin tiene valor 0 (false) por lo que hay que cambiarla para
 poder acceder
 """
+import sys
 import libnatas
 
 # url: "http://natas5.natas.labs.overthewire.org"
 # user: "natas5"
-password = "V0p12qz30HEUU22dz7CZGHiFk3VdPA9Z"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=5, password=password)
 natas.open(natas.level_url)

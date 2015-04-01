@@ -7,12 +7,14 @@ natas06.py
 el presunto codigo fuente de la pagina muestra que el formulario de validacion necesita el valor 
 que aparece en includes/secret.inc
 """
+import sys
 import re
+import sys
 import libnatas
 
 # url: "http://natas6.natas.labs.overthewire.org"
 # user: "natas6"
-password = "mfPYpp1UBKKsx7g4F0LaRjhKKenYAOqU"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=6, password=password)
 

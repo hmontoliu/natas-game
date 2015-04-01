@@ -10,11 +10,12 @@ pagina php, el codigo fuente muestra que la pass esta en
 se puede obtener el codigo en 
 index.php?page=/etc/natas_webpass/natas8
 """
+import sys
 import libnatas
 
 # url: "http://natas7.natas.labs.overthewire.org"
 # user: "natas7"
-password = "XLoIufz83MjpTrtPvP9iAtgF48EWjicU"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=7, password=password)
 

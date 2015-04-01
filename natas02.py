@@ -7,11 +7,12 @@ natas02.py
 
 la clave esta en files/users.txt
 """
+import sys
 import libnatas
 
 # url: "http://natas2.natas.labs.overthewire.org"
 # user: "natas2"
-password = "aRJMGKT6H7AOfGwllwocI2QwVyvo7dcl"
+password = sys.argv[1]
 
 # la password esta en files/users.txt
 natas = libnatas.NatasBrowser(level=2, password=password)

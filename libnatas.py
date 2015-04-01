@@ -65,8 +65,9 @@ class NatasBrowser(mechanize.Browser):
 
     def print_password(self, password_str):
         """Muestra cadena con la password obtenida"""
-        resultstr = """Password for level natas%s is %s"""
-        print resultstr % (self.nextlevel, password_str)
+        resultstr = """%s"""
+        # print resultstr % (self.nextlevel, password_str)
+        print resultstr % password_str
 
 # ejemplo de uso (level 0), indicamos el nivel actual y la password obtenida del anterior
 

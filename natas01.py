@@ -6,11 +6,12 @@ natas01.py
 
 prácticamente lo mismo que el nivel0
 """
+import sys
 import libnatas
 
 # url: "http://natas1.natas.labs.overthewire.org"
 # user: "natas1"
-password="9hSaVoey44Puz0fbWlHtZh5jTooLVplC"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=1, password=password)
 soup = natas.get_html_soup(natas.level_url)

@@ -18,11 +18,12 @@ Estas funcionan bastante bien:
 ... [a-z0-9]\\{32\\} /etc/natas_webpass/* ...
 ... [a-z0-9]\\{32\\} /etc/natas_webpass/natas11 ...
 """
+import sys
 import libnatas
 
 # url: "http://natas10.natas.labs.overthewire.org"
 # user: "natas10"
-password = "s09byvi8880wqhbnonMFMW8byCojm8eA"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=10, password=password)
 

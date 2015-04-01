@@ -14,11 +14,14 @@
 
 runall () 
 { 
+    NUM=1
     DEST=results.txt
     > $DEST 
     for file in natas??.py;
     do
-        python $file 2>/dev/null | tee -a $DEST;
+        password=$(python $file $password 2>/dev/null || echo fixme)
+        echo "Password nivel $NUM: $password" | tee -a $DEST;
+        let NUM++
     done
 }
 

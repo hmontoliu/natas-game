@@ -9,11 +9,12 @@ basta con encontrar el fichero de contraseña para el usuario natas10
 
 esta en /etc/natas_webpass/natas10
 """
+import sys
 import libnatas
 
 # url: "http://natas9.natas.labs.overthewire.org"
 # user: "natas9"
-password = "sQ6DKR8ICwqDMTd48lQlJfbF1q9B3edT"
+password = sys.argv[1]
 
 natas = libnatas.NatasBrowser(level=9, password=password)
 

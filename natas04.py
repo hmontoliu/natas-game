@@ -7,11 +7,12 @@ natas04.py
 
 hay que usar como referer la url del siguiente nivel 
 """
+import sys
 import libnatas
 
 # url: "http://natas4.natas.labs.overthewire.org"
 # user: "natas4"
-password = "8ywPLDUB2yY2ujFnwGUdWWp8MT4yZrqz"
+password = sys.argv[1]
 referer = "http://natas5.natas.labs.overthewire.org/"
 
 natas = libnatas.NatasBrowser(level=4, password=password)
